@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PC Parts Shop | OOP</title>
+  </head>
+  <body class="bg-gray-200 h-screen flex flex-col lg:flex-row">
+    <main class="w-full flex flex-col lg:flex-row p-6">
+      <div class="flex flex-col w-full lg:w-1/2">
+        <div class="flex flex-col justify-center mb-4">
+          <img
+            src="public/images/logo.jpeg"
+            alt="Logo"
+            class="h-10 w-48 mx-auto"
+          />
+        </div>
+        <div class="flex-1 flex items-center justify-center mb-8">
+          <img
+            src="public/images/shop-black-friday.png"
+            alt="black friday image"
+            class="w-full h-auto max-w-md rounded-lg shadow-md"
+          />
+        </div>
+      </div>
+      <div class="bg-white shadow-xl rounded-lg p-8 w-full lg:w-1/2 flex flex-col justify-between h-full">
+        <div class="flex flex-col cart-items-container overflow-y-auto flex-1"></div>
+        <div id="empty-cart" class="flex flex-col items-center justify-center text-center hidden">
+          <img
+            class="object-contain w-24 h-24 mb-4"
+            src="public/images/shopping-cart.png"
+            alt="empty-cart"
+          />
+          <h2 class="font-bold uppercase text-2xl text-red-600">No items in cart!</h2>
+          <a
+            href="#"
+            class="capitalize font-bold text-lg hover:underline text-blue-600 mt-2"
+            >Go back</a
+          >
+        </div>
+        <div class="flex justify-between items-center mt-6 border-t pt-4">
+          <h2 class="text-lg font-semibold">Total Price:</h2>
+          <p id="total-price" class="font-bold text-gray-800">$0.00</p>
+        </div>
+        <div class="mt-6">
+          <button
+            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-500 transition duration-300"
+          >
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </main>
+    <script src="https://kit.fontawesome.com/985cabe830.js" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
